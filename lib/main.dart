@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shoe_shop/route/route_screen.dart';
+import 'package:shoe_shop/route/route.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,9 +11,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      onGenerateTitle: (context) {
-        return 'SSSS';
-      },
       debugShowCheckedModeBanner: false,
       title: 'shoe-shop',
       theme: ThemeData.dark(),
