@@ -2,12 +2,17 @@ import 'package:go_router/go_router.dart';
 import 'package:shoe_shop/screens/pages/cart/cart_screen.dart';
 import 'package:shoe_shop/screens/pages/home/home_screen.dart';
 import 'package:shoe_shop/screens/pages/payment/payment_screen.dart';
+import 'package:shoe_shop/screens/splash-screen/splash_screen.dart';
 
 class MyRoutes {
   GoRouter routes = GoRouter(
     routes: [
       GoRoute(
         path: '/',
+        builder: (context, state) => const SplashScreen(),
+      ),
+      GoRoute(
+        path: '/home',
         builder: (context, state) => const HomeScreen(),
       ),
       GoRoute(
